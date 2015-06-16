@@ -1,0 +1,5 @@
+while read line
+do
+  echo "$line"
+  date +"%Y-%m-%d %H:%M:%S" | tr -d "\n" >> output.csv; echo -n "," >> output.csv; echo "$line" >> output.csv;  
+done < "${1:-/dev/stdin}"
