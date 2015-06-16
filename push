@@ -1,9 +1,12 @@
 #! /bin/bash
 
-filename=$1
-
-while read line
-do
-  echo "$line"
-  date +"%Y-%m-%d %H:%M:%S" | tr -d "\n" >> "$filename"; printf "," >> "$filename"; echo "$line" >> "$filename";  
-done < /dev/stdin
+if [ $1 = "--help" ]; then
+  echo "usage: ./push <filename>"
+else
+  filename=$1
+  while read line
+  do
+    echo "$line"
+    date +"%Y-%m-%d %H:%M:%S" | tr -d "\n" >> "$filename"; printf "," >> "$filename"; echo "$line" >> "$filename";  
+  done < /dev/stdin
+fi
