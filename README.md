@@ -15,4 +15,4 @@ Credits:
 Stefan Unterhauser
 R.J. Steinert
 
-License: GPLv3
+License: GNU AFFERO GENERAL PUBLIC LICENSE 
