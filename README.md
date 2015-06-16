@@ -1,6 +1,6 @@
 # OPK CLI: Simple CSV 
 
-A cli for push data from a pipe to a csv. Contains support for streams.
+A CLI to push data from a pipe to a csv. Contains support for streams.
 
 Example:
 ```
